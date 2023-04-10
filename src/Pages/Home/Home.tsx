@@ -8,8 +8,8 @@ import ServiceOrders from "../../components/ServiceOrders/ServiceOrders";
 import Units from "../../components/Units/Units";
 
 export default function Home() {
-  useGetAssetsQuery();
-  useGetUsersQuery();
+  // useGetAssetsQuery();
+  // useGetUsersQuery();
 
   return (
     <div
