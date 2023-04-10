@@ -18,5 +18,5 @@ export default function Status(props: StatusProps) {
     [styles.inDowntime]: status === EStatus.InDowntime,
   });
 
-  return <span className={classes}>{EStatusDict[status]}</span>;
+  return <span className={classes}>teste</span>;
 }
