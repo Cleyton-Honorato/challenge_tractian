@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "start": "vite --port process.env.PORT",
+    "start": "vite --port process.env.PORT --host",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
