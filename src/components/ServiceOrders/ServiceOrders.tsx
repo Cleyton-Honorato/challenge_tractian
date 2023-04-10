@@ -35,13 +35,15 @@ export default function ServiceOrders() {
     setWorkorders(data);
   }, [data]);
 
-  console.log(workorders);
-
   const onOk = () => {
     setWorkorders(
       workorders?.map((item) => {
         if (item.id === workorderId) {
-          return { ...item, description: description, assignee };
+          return {
+            ...item,
+            description: description ? description : item.description,
+            assignee,
+          };
         }
 
         return item;
@@ -93,11 +95,12 @@ export default function ServiceOrders() {
                     <strong>Descrição: </strong>
                     <span>{item.description}</span>
                   </div>
-
-                  <div>
-                    <strong>Responsável: </strong>
-                    <span>{item.assignee?.label}</span>
-                  </div>
+                  {assignee && (
+                    <div>
+                      <strong>Responsável: </strong>
+                      <span>{item.assignee?.label}</span>
+                    </div>
+                  )}
                 </div>
               </div>
             ))}

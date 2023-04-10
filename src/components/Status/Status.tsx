@@ -6,7 +6,7 @@ import { EStatus, EStatusDict } from "../../utils/enums/e-status";
 import styles from "./Status.module.scss";
 
 interface StatusProps {
-  status: string;
+  status: string | number;
 }
 
 export default function Status(props: StatusProps) {
@@ -18,5 +18,5 @@ export default function Status(props: StatusProps) {
     [styles.inDowntime]: status === EStatus.InDowntime,
   });
 
-  return <span className={classes}>teste</span>;
+  return <span className={classes}>{EStatusDict[status]}</span>;
 }

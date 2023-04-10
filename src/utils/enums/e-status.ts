@@ -4,7 +4,7 @@ export enum EStatus {
   InDowntime = "inDowntime",
 }
 
-export const EStatusDict = {
+export const EStatusDict: Record<string, string> = {
   [EStatus.InAlert]: "Em Alerta",
   [EStatus.InOperation]: "Em Operação",
   [EStatus.InDowntime]: "Em Parada",
