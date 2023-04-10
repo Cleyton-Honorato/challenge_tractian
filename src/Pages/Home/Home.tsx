@@ -21,7 +21,7 @@ export default function Home() {
         padding: "10px 20px",
       }}
     >
-      <Companies />
+      {/* <Companies /> */}
       <Divider />
       <AssetsGrid />
 
@@ -32,9 +32,9 @@ export default function Home() {
           gap: "10px",
         }}
       >
-        <ServiceOrders />
+        {/* <ServiceOrders />
         <Divider type="vertical" style={{ height: "auto" }} />
-        <Units />
+        <Units /> */}
       </div>
     </div>
   );
