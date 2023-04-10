@@ -1,0 +1,67 @@
+.container {
+  background: #fff;
+  padding: 10px;
+  width: 50%;
+  border-radius: 10px;
+}
+
+.content {
+  display: flex;
+  gap: 2rem;
+  overflow-y: auto;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: auto 7rem;
+  border: 1px solid #7f8c8d;
+  border-radius: 10px;
+  width: 25%;
+  height: 10rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 5px;
+}
+
+.status {
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-size: 10px;
+  color: #fff;
+  padding: 2px 5px;
+  white-space: nowrap;
+  text-align: center;
+  width: max-content;
+}
+
+.completed {
+  background-color: #2ecc71;
+}
+
+.inProgress {
+  background-color: #008fff;
+}
+
+.contentModal {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  gap: 2rem;
+}

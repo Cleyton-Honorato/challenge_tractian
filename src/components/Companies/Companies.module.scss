@@ -1,0 +1,30 @@
+.company {
+  display: flex;
+  justify-content: space-around;
+  background: #fff;
+  border-radius: 7px;
+  width: 17%;
+  padding: 10px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: #8b8585 solid 1px;
+  border-radius: 100%;
+
+  width: 100px;
+  height: 100px;
+
+  > span {
+    font-size: 38px;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+}

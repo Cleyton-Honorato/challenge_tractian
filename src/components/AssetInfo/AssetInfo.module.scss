@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 35%;
+  height: max-content;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.details {
+  display: flex;
+  justify-content: space-around;
+
+  img {
+    width: 13rem;
+    height: 13rem;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}

@@ -1,0 +1,45 @@
+.units {
+  background: #fff;
+  padding: 10px;
+  width: 50%;
+  border-radius: 10px;
+}
+
+.content {
+  display: flex;
+  gap: 2rem;
+  overflow-y: auto;
+}
+
+.unit {
+  display: grid;
+  grid-template-rows: 7rem auto;
+  align-items: center;
+  justify-items: center;
+  border: 1px solid #7f8c8d;
+  border-radius: 10px;
+  width: 25%;
+  height: 10rem;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 10rem auto;
+  flex: 1;
+  justify-items: end;
+}
+
+.icon {
+  justify-content: center;
+  border: #8b8585 solid 1px;
+  border-radius: 100%;
+  font-size: 30px;
+  width: 50%;
+  height: 85px;
+  margin-right: 15%;
+  margin-top: 10%;
+}
+
+.btn {
+  align-self: flex-start;
+}
